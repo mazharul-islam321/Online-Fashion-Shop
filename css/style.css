@@ -3,12 +3,14 @@ body {
     font-family: "Montserrat", sans-serif;
     background-image: linear-gradient(to right, #112f57, #537895);
 }
+/* header text */
 .header {
     margin-top: 20px;
     margin-left: 30px;
     font-style: italic;
     color: goldenrod;
 }
+/* all products css */
 #all-products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -18,15 +20,15 @@ body {
     align-items: center;
     justify-content: center;
 }
+/* single product css */
 .single-product {
     background-image: linear-gradient(to right, #97a7be, #bdc6cc);
     height: 500px;
     margin: 15px;
     padding: 10px;
-    transition: 0.2s;
+    transition: 0.3s;
     border-radius: 5px;
 }
-
 .single-product:hover {
     box-shadow: 4px 4px 10px rgba(197, 197, 193, 0.411);
     /* background-color: rgb(188, 189, 192); */
@@ -38,6 +40,7 @@ body {
     width: 150px;
     height: 150px;
 }
+/* cart design css */
 .cart {
     background-color: rgb(154, 171, 201);
     width: 350px;
@@ -50,6 +53,7 @@ body {
 .cart-main {
     padding-right: 30px;
 }
+/* responsive css */
 @media only screen and (max-width: 768px) {
     #all-products {
         display: grid;

@@ -1,6 +1,7 @@
+// function for load data
 const loadProducts = () => {
-    // const url = `https://fakestoreapi.com/products`;
-    const url = `../js/data.json`;
+    const url = `https://fakestoreapi.com/products`;
+    // const url = `../js/data.json`;
     fetch(url)
         .then((response) => response.json())
         .then((data) => showProducts(data));
@@ -27,6 +28,7 @@ const showProducts = (products) => {
         document.getElementById("all-products").appendChild(div);
     }
 };
+// all other function call from here and total product count
 let count = 0;
 const addToCart = (price) => {
     count = count + 1;
@@ -35,7 +37,7 @@ const addToCart = (price) => {
     updateTotal();
     document.getElementById("total-Products").innerText = count;
 };
-
+// get innertext value
 const getInputValue = (id) => {
     const element = document.getElementById(id).innerText;
     const converted = parseFloat(element);
